@@ -9,6 +9,7 @@ jobs:
             name: Install Dependencies
             command: |
               lscpu
+              hello im alive
 
 workflows:
     version: 2.1
